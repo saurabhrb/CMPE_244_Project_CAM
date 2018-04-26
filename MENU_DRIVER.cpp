@@ -176,7 +176,7 @@ void scrollUp()
 {
 	highlighted--;
 	if(highlighted<0)
-	    highlighted=0;
+	    highlighted=all_elements.size();
 }
 
 Menu* loadNext()

@@ -14,9 +14,16 @@
 #include "lpc_pwm.hpp"
 #include "LabGPIO.hpp"
 
-#include "ov7670_FINAL_I2c_reglist.hpp"
+#include "LCD_MENU.hpp"
 
-#define Dev_addr 0x42
+#include "ov7670_FINAL_I2c_reglist.hpp"
+#include "storage.hpp"
+
+//#define Dev_addr 0x60 //ov2640
+#define Dev_addr 0x42 //ov7670
+
+
+
 
 class OV {
 public:
@@ -36,10 +43,11 @@ public:
 
     void camInit(void);
 
-    void captureImg(uint16_t wg, uint16_t hg);
+    void captureImg(uint16_t wg, uint16_t hg, LCD_MENU *myLCD);
 
     void turn(on_off val);
 
+    void reset();
 private:
     I2C2 *_i2c;
     PWM *_pwm;

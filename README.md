@@ -7,3 +7,6 @@ I have found that certain resistor values do not work such as 1K and 2.2K but fo
 
 Link containing everything:
 http://www.instructables.com/id/OV7670-Without-FIFO-Very-Simple-Framecapture-With-/
+
+Project Link:
+http://socialledge.com/sjsu/index.php/S18:_Team_Nemesis(SJSU_Cam)
